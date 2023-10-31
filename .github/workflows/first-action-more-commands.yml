@@ -1,4 +1,4 @@
-name: First Workflow # Name of the workflow
+name: First Workflow with more commands # Name of the workflow
 on: workflow_dispatch # When this workflow should be executed(Event) workflow_dispatch is the type of event which allows manually trigger the workflow. Event which is waiting for user manually execute the workflow
 jobs:
   first-job: #name of the job
