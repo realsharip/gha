@@ -1,0 +1,12 @@
+name: First Workflow # Name of the workflow
+on: workflow_dispatch # When this workflow should be executed(Event) workflow_dispatch is the type of event which allows manually trigger the workflow. Event which is waiting for user manually execute the workflow
+jobs:
+  first-job: #name of the job
+    runs-on: ubuntu-latest # Define the runner
+    steps: # steps which we need for job
+      - name: Print Greeting
+        run: |
+          echo "Hello World" # Define the command which should be executed
+          echo "Hello World Again" # Define the second command which should be executed
+      - name: Print goodbye
+        run: echo "Done - bye!"
